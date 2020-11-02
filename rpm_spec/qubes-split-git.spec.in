@@ -27,7 +27,7 @@ Vendor:     Invisible Things Lab
 License:    GPL
 URL:        https://www.qubes-os.org/
 
-Requires:   python3
+Requires:   python%{python3_pkgversion}
 Requires:   git
 
 Source0: %{name}-%{version}.tar.gz
@@ -39,10 +39,8 @@ Only correctly signed tags are ever written to disk.
 %prep
 %setup -q
 
-%build
 %install
-make install \
-    DESTDIR=$RPM_BUILD_ROOT
+%make_install
 
 %files
 /etc/qubes-rpc/git.Fetch
