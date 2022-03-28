@@ -19,7 +19,7 @@
 
 Name:       qubes-split-git
 Version:    @VERSION@
-Release:    1%{dist}
+Release:    @REL@%{dist}
 Summary:    Secure git import over qrexec
 
 Group:      Qubes
