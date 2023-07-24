@@ -1,0 +1,4 @@
+vm:
+  rpm:
+    build:
+    - rpm_spec/qubes-split-git.spec
